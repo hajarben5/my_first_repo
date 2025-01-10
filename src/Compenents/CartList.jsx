@@ -2,10 +2,10 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
-import { removeFromCart, increment, decrement } from '../store'; // Adjust the import path if needed
+import { removeFromCart, increment, decrement } from '../features/CartSlice'; 
 
 const CartList = () => {
-  const cart = useSelector(state => state.cart.cart);
+  const cart = useSelector(state=>state.cart.cart);
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (id) => {

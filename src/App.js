@@ -1,14 +1,11 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
-import store from './store';
-import NavBar from './shoppingCard/navbar';
-import Products from './shoppingCard/Product'; 
-import CartList from './shoppingCard/CartList'; 
+import NavBar from './Compenents/navbar';
+import Products from './Compenents/Product'; 
+import CartList from './Compenents/CartList'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
-  <Provider store={store}>
     <BrowserRouter>
       <NavBar />
       <div className="container">
@@ -18,7 +15,6 @@ const App = () => (
         </Routes>
       </div>
     </BrowserRouter>
-  </Provider>
 );
 
 export default App;

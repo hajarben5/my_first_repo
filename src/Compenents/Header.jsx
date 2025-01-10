@@ -6,8 +6,8 @@ import { FaShoppingBag } from 'react-icons/fa';
 
 const Header = () => {
     return (
-        <BrowserRouter>
-               <header className="navbar navbar-light bg-light">
+      <BrowserRouter>
+        <header className="navbar navbar-light bg-light">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">My Store</Link>
         <Link to="/cart" className="nav-link"> 
